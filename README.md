@@ -2,7 +2,7 @@
 # **DeviceGhost 🌐**  
 
 <p align="center">  
-  <img src="docs/images/logo.png" alt="DeviceGhost Logo" width="200"/>  
+  <img src="logo/deviceghost.png" alt="DeviceGhost Logo" width="200"/>  
 </p>  
 
 **DeviceGhost** is a powerful IoT device security testing framework designed for network security professionals and researchers. This framework provides comprehensive reconnaissance, exploitation, and man-in-the-middle (MITM) capabilities for testing IoT devices, smart TVs, routers, and other networked devices.  
