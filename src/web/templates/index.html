@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeviceGhost - Control Panel</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>DeviceGhost Control Panel</h1>
+      </header>
+
+      <div class="main-content">
+        <div class="scan-section">
+          <h2>Network Scan</h2>
+          <div class="form-group">
+            <input
+              type="text"
+              id="interface"
+              placeholder="Network Interface (e.g., wlan0)"
+            />
+            <button onclick="startScan()">Start Scan</button>
+          </div>
+        </div>
+
+        <div class="devices-section">
+          <h2>Discovered Devices</h2>
+          <div id="devices-list"></div>
+        </div>
+
+        <div class="exploit-section">
+          <h2>Available Exploits</h2>
+          <div id="exploits-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
